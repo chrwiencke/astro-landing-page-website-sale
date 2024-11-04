@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import ProductView from '../components/ProductView.astro'
+import SaleSlogan from '../components/SaleSlogan.astro'
+import PricingCard from '../components/PricingCard.astro';
+---
+
+<Layout title="Pludo SaaS">
+	<SaleSlogan />
+    <div class="flex flex-wrap justify-center pb-10">
+        <PricingCard 
+        image="https://images.unsplash.com/photo-1508185159346-bb1c5e93ebb4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=55cf14db6ed80a0410e229368963e9d8&auto=format&fit=crop&w=1900&q=80"
+        title="1 Month"
+        description="One month of great compute"
+        price="19.99 USD"
+        />
+        <PricingCard 
+        image="https://images.unsplash.com/photo-1508185159346-bb1c5e93ebb4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=55cf14db6ed80a0410e229368963e9d8&auto=format&fit=crop&w=1900&q=80"
+        title="6 Months"
+        description="6 months of great compute"
+        price="49.99 USD"
+        />
+        <PricingCard 
+        image="https://images.unsplash.com/photo-1508185159346-bb1c5e93ebb4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=55cf14db6ed80a0410e229368963e9d8&auto=format&fit=crop&w=1900&q=80"
+        title="1 Year"
+        description="1 Year of great compute"
+        price="79.99 USD"
+        />
+
+    </div>
+
+    <Footer />
+</Layout>
