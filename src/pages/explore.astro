@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TechStackCard from "../components/TechStackCard.astro";
+---
+
+<Layout title="Tech Stack">
+    <h1 class="text-3xl font-bold text-center p-5">Tech stack</h1>
+    <TechStackCard 
+    tool="Astro"
+    description="The web framework for content-driven websites"
+    color="bg-teal-900"
+    />
+    <TechStackCard 
+    tool="Tailwind CSS"
+    description="Rapidly build modern websites without ever leaving your HTML."
+    color="bg-transparent"
+    />
+    <TechStackCard 
+    tool="Daisy UI"
+    description="The most popular component library for Tailwind CSS"
+    color="bg-teal-900"
+    />
+    <TechStackCard 
+    tool="Cloudflare"
+    description="DNS, Pages, Pages Functions"
+    color="bg-transparent"
+    />
+</Layout>
